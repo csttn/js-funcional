@@ -1,5 +1,6 @@
 Array.prototype.meuReduce = function (callback, valorInicial) {
   let acumulador = valorInicial;
+  console.log(acumulador, 'ACUMULADOR');
   for (let i = 0; i < this.length; i++) {
     acumulador = callback(acumulador, this[i], i, this);
   }
